@@ -14,7 +14,7 @@ const {
     getAllProduct: async(req, res) => {
       try {
         const page = Number(req.query.page) || 1;
-        const limit = Number(req.query.limit) || 5;
+        const limit = Number(req.query.limit) || 6;
         const offset = (page - 1) * limit;
         let sortBY = req.query.sortBY || "id_product";
         let sort = req.query.sort || 'ASC';
@@ -124,3 +124,11 @@ const {
   };
   
   module.exports = productController;
+
+
+
+  // controller : const sortby = req.query.sortby || name;
+    // const sort = req.query.sort.toUpperCase() || 'ASC';
+
+
+  // model : `SELECT * FROM category ORDER BY ${sortby} ${sort} LIMIT ${limit} OFFSET ${offset}`
