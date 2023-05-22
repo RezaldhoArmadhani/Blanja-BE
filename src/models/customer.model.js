@@ -1,16 +1,31 @@
 const Pool = require('../config/db');
+const Crypto = require('crypto');
 
 const selectAllCustomer = (limit, offset, searchParam,sortBY,sort) =>{
   return Pool.query(`SELECT * FROM customer WHERE name LIKE '%${searchParam}%' ORDER BY ${sortBY} ${sort} LIMIT ${limit} OFFSET ${offset} `);
 }
 
+const findEmail =(email)=>{
+  return  new Promise ((resolve,reject)=> 
+  Pool.query(`SELECT * FROM customer WHERE email='${email}'`,(error,result)=>{
+    if(!error){
+      resolve(result)
+    }else{
+      reject(error)
+    }
+  })
+  )
+}
+
 const selectCustomer = (id) =>{
-    return Pool.query(`SELECT * FROM customer WHERE id_customer=${id}`);
+    return Pool.query(`SELECT * FROM customer WHERE id_customer='${id}'`);
 }
 
 const insertCustomer = (data) =>{
-    const { id,name,phone,password,email,gender,birth_date} = data;
-    return Pool.query(`INSERT INTO customer (id_customer,name,phone,password,email,gender,birth_date) VALUES(${id},'${name}','${phone}','${password}','${email}','${gender}','${birth_date}')`);
+    console.log(data); 
+    const {name,phone,password,email,gender,birth_date} = data;
+    const query = `INSERT INTO customer VALUES('${Crypto.randomUUID()}','${name}','${phone}','${password}','${email}','male','${birth_date}','customer')`
+    return Pool.query(query);
 }
 
 const updateCustomer = (data) =>{
@@ -19,7 +34,7 @@ const updateCustomer = (data) =>{
 }
 
 const deleteCustomer = (id) =>{
-    return Pool.query(`DELETE FROM customer WHERE id_customer=${id}`);
+    return Pool.query(`DELETE FROM customer WHERE id_customer='${id}'`);
 }
 
 const countData = () =>{
@@ -45,5 +60,6 @@ module.exports = {
     updateCustomer,
     deleteCustomer,
     countData,
-    findId
+    findId,
+    findEmail
 }

@@ -4,27 +4,29 @@
 create type kelamin as enum ('male', 'female');
 
 create table customer (
-    id_customer int primary key,
+    id_customer varchar(255) primary key,
     name varchar (255),
-    phone int,
+    phone varchar(255),
     password varchar (255),
     email varchar (255),
-    gender kelamin,
-    birth_date date
+    gender varchar(255),
+    birth_date date,
+    role varchar(255)
 );
 
 create table seller (
-    id_seller int primary key,
-    name varchar (255),
-    phone int,
-    password varchar (255),
-    email varchar (255),
-    gender kelamin,
-    birth_date date
+    id_seller varchar(255) primary key,
+    name varchar(255),
+    phone varchar(255),
+    password varchar(255),
+    email varchar(255),
+    gender varchar(255),
+    birth_date date,
+    role varchar(255)
 );
 
 create table product (
-    id_product int primary key,
+    id_product varchar (255) primary key,
     name varchar (255),
     price int,
     description varchar (255),
@@ -32,15 +34,24 @@ create table product (
     rating int,
     color varchar (255),
     size varchar (255),
+    photo varchar(255),
     id_category int,
     CONSTRAINT fk_category FOREIGN KEY (id_category) REFERENCES category(id_category),
-    id_seller int,
+    id_seller varchar(255),
     CONSTRAINT fk_seller FOREIGN KEY (id_seller) REFERENCES seller(id_seller)
 );
 
 create table category (
     id_category int primary key,
     name varchar(255)
+);
+
+create table userr (
+  id_user varchar(255) primary key,
+  email varchar(255),
+  password varchar(255),
+  fullname varchar(255),
+  role varchar(255)
 );
 
 --CRUD Tabel customer
@@ -68,3 +79,22 @@ insert into category (id_category, name) values
 
 insert into seller (id_seller, name, phone, password, email, gender, birth_date) values
 (10, 'Anderson', 6131545, 'nopas', 'anderson@gmail.com', 'laki-laki', '01-03-2000'),
+
+
+
+
+
+{
+    "name": "Arthur lane",
+    "email": "arthur@gmail.com",
+    "phone": "08123456789",
+    "position" : "manager",
+    "password": "nopass",
+    "job_field": "human resource",
+    "city" : "new york",
+    "description" : "experienced web developer",
+    "instagram": "arthurlane",
+    "linkedin": "arthurlane",
+    "company_name": "monochrome",
+    "role" : "recruiter"
+        }
