@@ -7,7 +7,7 @@
   <p align="center">
     <a href="https://github.com/RezaldhoArmadhani/Blanja-BE"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="blanja-be-production.up.railway.app">View Demo</a>
+    <a href="https://blanja-be-production.up.railway.app">View Demo</a>
     ·
   </p>
 </p>
