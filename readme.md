@@ -158,4 +158,4 @@ Contributions are what make the open source community such an amazing place to b
 
 My Email : rezaldhoarmadhani11@gmail.com
 
-Project Link: [https://github.com/Dhimasswara/BE-HIREJOB/](https://github.com/RezaldhoArmadhani/Blanja-BE)
+Project Link: [https://github.com/RezaldhoArmadhani/Blanja-BE](https://github.com/RezaldhoArmadhani/Blanja-BE)
