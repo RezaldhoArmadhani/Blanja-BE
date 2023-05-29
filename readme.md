@@ -33,11 +33,11 @@
 
 ## About The Project
 
-Blanja adalah proyek website E-commerce yang bertujuan untuk memberikan pengalaman belanja online yang mudah dan nyaman bagi pengguna di Indonesia. Situs ini menawarkan berbagai macam produk, termasuk fashion, kecantikan, elektronik, serta makanan dan minuman.
+Blanja is an E-commerce website project that aims to provide an easy and convenient online shopping experience for users in Indonesia. The site offers a wide variety of products, including fashion, beauty, electronics, and food and beverages.
 
-Untuk menggunakan layanan Blanja, pengguna hanya perlu membuat akun dan masuk dengan akun yang telah dibuat. Setelah itu, pengguna dapat menelusuri produk, menambahkannya ke keranjang belanja, dan memilih metode pembayaran yang diinginkan.
+To use the Blanja service, users only need to create an account and log in with the account that was created. After that, the user can browse the product, add it to the shopping cart, and select the desired payment method.
 
-Dengan segala fitur dan keamanan yang diberikan, Blanja diharapkan dapat memberikan pengalaman belanja online yang aman, mudah, dan nyaman bagi pengguna di seluruh Indonesia.
+With all the features and security provided, Blanja is expected to provide a safe, easy and comfortable online shopping experience for users throughout Indonesia.
 
 ### Built With
 
