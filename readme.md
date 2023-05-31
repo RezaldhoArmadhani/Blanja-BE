@@ -126,6 +126,9 @@ REFRESH_TOKEN_SECRET
 # Origin Domain 
 ORIGIN_DOMAIN 
 ```
+## Endpoint List
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/25236983/2s93mATfFK)
 
 <!-- CONTRIBUTING -->
 
