@@ -7,7 +7,7 @@
   <p align="center">
     <a href="https://github.com/RezaldhoArmadhani/Blanja-BE"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://blanja-fe-eight.vercel.app/">View Demo</a>
+    <a href="https://blanja-fe-six.vercel.app/">View Demo</a>
     ·
   </p>
 </p>
@@ -148,7 +148,7 @@ Contributions are what make the open source community such an amazing place to b
 
 :rocket: [`Frontend Blanja`](https://github.com/RezaldhoArmadhani/Blanja-FE)
 
-:rocket: [`Demo Blanja`](https://blanja-fe-eight.vercel.app/)
+:rocket: [`Demo Blanja`](https://blanja-fe-six.vercel.app/)
 
 <!-- CONTACT -->
 
